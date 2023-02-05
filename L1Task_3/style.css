@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Manrope", sans-serif;
+}
+
+:root {
+	--bg-color: #222831;
+	--text-color: #393e46;
+	--form-color: #ffa500;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+form {
+	width: 40%;
+	background: var(--form-color);
+	text-align: center;
+	padding: 2rem;
+	border-radius: 10px;
+}
+
+h1 {
+	color: var(--text-color);
+	font-size: 1.6rem;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	letter-spacing: 4px;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.form-input {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+input[type="text"],
+select {
+	margin-top: 0.6rem;
+	color: var(--text-color);
+	background: transparent;
+	border: 4px solid var(--text-color);
+	border-radius: 10px;
+	font-size: 1rem;
+	padding: 0.8rem;
+}
+
+option {
+	color: var(--text-color);
+}
+
+button {
+	background: #FFE5B4;
+	color: var(--text-color);
+	padding: 1rem 2.2rem;
+	font-size: 1.2rem;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	transform: translateY(3.5rem);
+	transition: box-shadow 0.5s 0s ease;
+}
+
+button:hover {
+	box-shadow: 0 0 30px #eeeeee;
+}
+
+#result {
+	margin-top: 1.5rem;
+	font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+	form {
+		width: fit-content;
+	}
+
+	.container {
+		min-height: 40vh;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 375px) {
+	form {
+		width: fit-content;
+	}
+
+	.container {
+		min-height: 40vh;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
